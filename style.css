@@ -1,4 +1,5 @@
-*{
+/* Reset and General Styles */
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,43 +10,92 @@
     font-family: "Pirata One", system-ui;
     font-weight: 400;
     font-style: normal;
-  }
-  
-header {
-    background-color: purple; 
-    color: white; 
-    padding: 20px 0; 
+}
+.playfair-display{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
   }
 
-.container{
-    margin: 0px auto;
-    width: 90%;
-    max-width: 1200px;
-    align-items: center;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+/* Header Styles (Corrected) */
+header {
+    background-color: rgb(141, 89, 148); /* Use the purple you want */
+    color:white; /* White text for contrast */
+    padding: 20px 20; /* Add padding for spacing */
+    position: fixed; /* Make the header stick to the top */
+    top: 0; /* Align it to the top */
+    width: 107%; /* Make it span the full width */
+    z-index: 100; /* Ensure it's on top of other content */
 }
-img{
+
+body {
+    background-image: url(Photos/bgtwo.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1010;
+
+}
+
+.container {
+    margin: 0 auto;
+    width: 43%;
+    max-width: 2000px;
+    display: flex;
+}
+
+/* Navigation Styles */
+.topnav {
+    border-bottom-width: 1px;  
+    left: 0;
+    top: 0;
+    width: 120%;
+    z-index: 100;
+    overflow: hidden;
+}
+
+.topnav a {
+   
+    color: white;
+    text-align: center;
+    padding: 30px 70px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.topnav a:hover {
+    background-color: white;
+    color: rgb(87, 2, 87);
+}
+
+.topnav .brand {
+    font-weight: bold;
+}
+
+/* Rest of your CSS (Image, Text, Intro, etc.) */
+img {
     max-width: 100%;
     height: auto;
     float: left;
     border-radius: 20px;
-    border: 3px solid white;
     margin-right: 20px;
 }
 
-.text h1{
-    font-size: 2.5em;;
+.text h1 {
+    font-size: 4em;
     padding: 5px;
     text-align: center;
+    font-family: "Pirata One", Helvetica, sans-serif;
 }
 
-p{
+p {
     font-size: 1.25em;
     line-height: 1.6;
 }
-.row{
+
+.row {
     display: flex;
     flex-wrap: wrap;
     gap: 100px;
@@ -55,20 +105,23 @@ p{
     width: calc((100% - 20px) / 2);
 }
 
+.three-columns .card {
+    width: calc((100% - 20px) / 3)
+}
+
 .intro {
     background-image: url(Photos/background.jpg);
     background-size: cover;
     background-position: center;
-    min-height: 105vh; 
-    display: flex; 
+    min-height: 105vh;
+    display: flex;
     position: relative;
-    
 }
 
-.intro-container{
-    color: #fff; 
+.intro-container {
+    color: #fff;
     background-color: rgba(2, 2, 2, 0.5);
-    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-align: center;
     padding: 20px;
     margin: auto;
@@ -80,52 +133,250 @@ p{
     font-weight: normal;
     letter-spacing: 2px;
     margin-bottom: 20px;
-}
-
-nav {
-    position: absolute; 
-    top: 40px; 
-    left: 130px;
-    width: 100%; 
     text-align: center;
 }
 
-nav ul {
-    list-style: none; 
-    margin: 0;
-    padding: 0;
-    display: flex; 
-  }
-  
-  nav li {
-    margin-left: 100px; 
-  }
-
-  nav a {
-    color: white;
-    text-decoration: none; 
-    padding: 10px 15px; 
-    border-radius: 5px; 
-  }
-
-  nav.container{
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-  }
-
-  nav h1 {
-    font-size: 3em;
-    color: white;
-    margin: 0;
+.topnav a.brand { /* Style for "Jessica Mifsud" */
+    border-radius: 0; /* Remove rounded corners */
+    background-color: transparent; /* Remove button background */
+    padding: 14px 0; /* Adjust padding */
+    margin-right: 50px; /* Add some space */
+    pointer-events: none; /* Make it non-clickable */
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 50px;
+    font-family:Pirata One, Helvetica, sans-serif
+    
 }
 
-nav a {
+.topnav a:hover {
+    background-color: rgb(90, 39, 135);
     color: #ffffff;
+}
+
+.portfolio-container {
+    background-color: rgb(141, 89, 148); /* Use the purple you want */
+    color:rgb(134, 134, 134); /* White text for contrast */
+    margin: 0 auto;
+    width: 50%;
+    max-width: 2000px;
+    display: flex;
+
+}
+
+.portfoliotopnav a {
+   
+    color: white;
+    text-align: center;
+    padding: 40px 70px;
     text-decoration: none;
-    padding: 12px 18px;
-    background-color: rgba(186, 85, 211, 0.8); /* Lighter purple with some transparency */
+    font-size: 25px;
+}
+
+.portfoliotopnav {
+    border-bottom-width: 1px;  
+    left: 0;
+    top: 0;
+    width: 120%;
+    z-index: 100;
+    overflow: hidden;
+    
+}
+
+.portfoliotopnav .brand {
+    font-weight: bold;
+}
+.portfoliotopnav a.brand { /* Style for "Jessica Mifsud" */
+    border-radius: 0; /* Remove rounded corners */
+    background-color: transparent; /* Remove button background */
+    padding: 14px 0; /* Adjust padding */
+    margin-right: 50px; /* Add some space */
+    pointer-events: none; /* Make it non-clickable */
+    display: inline-block;
+    margin: 0 5px;
+    font-size: 50px;
+    font-family:Pirata One, Helvetica, sans-serif
+    
+}
+
+.portfoliotopnav a:hover {
+    background-color: rgb(90, 39, 135);
+    color: #ffffff;
+    ;
+}
+
+.portfolio-content {
+    text-align: center; /* Center the title and squares horizontally */
+    margin: 200px auto; /* Add some space around the content */
+}
+
+.portfolio-title {
+    font-size: 5em; /* Make the title bigger */
+    margin-bottom: 150px; /* Add space below the title */
+    color: white; /* Make the title white */
+    font-family:"Pirata One", Helvetica, sans-serif;
+}
+
+.portfolio-squares {
+    display: flex; /* Make the squares line up in a row */
+    justify-content: center; /* Center the squares horizontally */
+    gap: 150px; /* Add some space between the squares */
+}
+
+.portfolio-square {
+    background-color: #d1a0c8; /* Light purple background */
+    color: white; /* White text */
+    padding: 100px; /* Add padding inside the squares */
+    border-radius: 20px; /* Round the corners */
+    width: 300px; /* Set a width for the squares */
+    height: 250px; /* Set a height for the squares */
+    display: flex; /* Make the text center vertically and horizontally */
+    justify-content: center;
+    align-items: center;
+    font-size: 2em; /* Make the text a bit bigger */
+    font-family:Playfair Display, Helvetica, sans-serif;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+.portfolio-square:hover {
+    background-color: purple;
+}
+
+.portfolio-square:active {
+    background-color: rgb(107, 1, 107);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.digitalwork-container {
+    margin: auto;
+    width: 1000%;
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    display: flex;
+    gap: 100px;
+
+}
+
+.digital-work {
+width: 700px; /* Adjust the image size */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 8px; /* Optional: Rounded corners */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border: 0; 
+  margin-bottom: 30px;
+}
+
+.digital-work p {
+    margin-top: 10px;
+  }
+
+  .art-item {
+    position: relative;
+    display: inline-block;
+}
+
+.art-name {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(187, 0, 194, 0.7);
+    font-size: 125%;
+    color: white;
+    padding: 5px 10px;
     border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Drop shadow */
-    font-size: 1.1em
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.art-item:hover .art-name {
+    opacity: 1;
+    font-family: Playfair Display, Helvetica, sans-serif;
+}
+
+.form-container {
+    font-family: Playfair Display, Helvetica, sans-serif;
+    background-color: #7c5581;
+    padding: 50px;
+    border-radius: 40px;
+    width: 700px;
+    margin: 80px auto;
+    min-height: 300px;
+}
+label, input, textarea {
+    display: block; /* Make labels and inputs stack on top of each other */
+    margin-bottom: 5px;
+    color: white; /* White text */
+}
+
+input[type="submit"] {
+    background-color: #d1a0c8; /* Light purple button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: purple; /* Darker purple on hover */
+}
+
+input, textarea {
+    background-color: #444; /* Darker gray input fields */
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    color: white;
+    width: 100%; /* Make inputs fill the container */
+}
+
+.contactme-title h1{
+    text-align: center;
+    width: 100%;
+    margin-top: 215px; 
+    align-items: center;
+    margin-bottom: 40px;
+    font-family: "Pirata One", Helvetica, sans-serif;
+    font-size: 6em; /* Make it big */
+    color: white;
+}
+
+.contactme-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Center vertically */
+    min-height: 100vh; /* Take full screen height */
+    text-align: center;
+    padding: 20px;
+}
+
+.thankyou-title h1{
+    text-align: center;
+    width: 100%;
+    margin-top: 375px; 
+    align-items: center;
+    margin-bottom: 40px;
+    font-family: "Pirata One", Helvetica, sans-serif;
+    font-size: 6em; /* Make it big */
+    color: white;
+}
+
+.thankyou-title h2{
+    text-align: center;
+    width: 100%;
+    margin-top: 10px; 
+    align-items: center;
+    margin-bottom: 40px;
+    font-family: Playfair Display, Helvetica, sans-serif;
+    font-size: 2em; /* Make it big */
+    color: white;
 }
