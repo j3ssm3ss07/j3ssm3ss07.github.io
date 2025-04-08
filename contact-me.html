@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JM Contact Me!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header> 
+        <div class="body">
+            <div class="portfolio-container">
+                <div class="portfoliotopnav">
+                    <a class="brand">Jessica Mifsud</a>
+                    <a href="index.html" class="nav-link"> About Me</a>
+                    <a href="my-portfolio.html" class="nav-link">My Portfolio</a>
+                    <a href="contact-me.html" class="nav-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </header> 
+
+    <div class="contactme-title"> 
+        <h1>Contact Me!</h1> 
+    </div>
+
+    <form action="mailto:Jessica.Mifsud.i81047@mcast.edu.mt?subject=WebsiteContact&body=" method="post" enctype="text/plain"> 
+    <div class="form-container">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br><br>
+            <label for="email">Subject:</label>
+            <select name="subject" id="subject">
+                <option value="Commission">Commission</option>
+                <option value="Query">Query</option>
+                <option value="Hi">Just wanted to say hi!</option>
+                <option value="Other">Other</option>
+            </select>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+            <input type="submit" value="Send!">
+        </div>
+    </form>
+</body>
+</html>

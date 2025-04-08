@@ -1,4 +1,4 @@
-/* Reset and General Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -13,20 +13,17 @@
 }
 .playfair-display{
     font-family: "Playfair Display", serif;
-    font-optical-sizing: auto;
-    font-weight: weight;
     font-style: normal;
   }
 
-/* Header Styles (Corrected) */
 header {
-    background-color: rgb(141, 89, 148); /* Use the purple you want */
-    color:white; /* White text for contrast */
-    padding: 20px 20; /* Add padding for spacing */
-    position: fixed; /* Make the header stick to the top */
-    top: 0; /* Align it to the top */
-    width: 107%; /* Make it span the full width */
-    z-index: 100; /* Ensure it's on top of other content */
+    background-color: rgb(141, 89, 148); 
+    color:white; 
+    padding: 20px 0; 
+    position: fixed; 
+    top: 0; 
+    width: 107%; 
+    z-index: 100; 
 }
 
 body {
@@ -46,7 +43,7 @@ body {
     display: flex;
 }
 
-/* Navigation Styles */
+
 .topnav {
     border-bottom-width: 1px;  
     left: 0;
@@ -74,7 +71,7 @@ body {
     font-weight: bold;
 }
 
-/* Rest of your CSS (Image, Text, Intro, etc.) */
+
 img {
     max-width: 100%;
     height: auto;
@@ -128,7 +125,7 @@ p {
 }
 
 .intro h1 {
-    font-family: Pirata One, Arial, sans-serif;
+    font-family: "Pirata One", Arial, sans-serif;
     text-transform: uppercase;
     font-weight: normal;
     letter-spacing: 2px;
@@ -136,16 +133,16 @@ p {
     text-align: center;
 }
 
-.topnav a.brand { /* Style for "Jessica Mifsud" */
-    border-radius: 0; /* Remove rounded corners */
-    background-color: transparent; /* Remove button background */
-    padding: 14px 0; /* Adjust padding */
-    margin-right: 50px; /* Add some space */
-    pointer-events: none; /* Make it non-clickable */
+.topnav a.brand { 
+    border-radius: 0; 
+    background-color: transparent; 
+    padding: 14px 0;
+    margin-right: 50px; 
+    pointer-events: none; 
     display: inline-block;
     margin: 0 5px;
     font-size: 50px;
-    font-family:Pirata One, Helvetica, sans-serif
+    font-family:"Pirata One", Helvetica, sans-serif
     
 }
 
@@ -155,8 +152,8 @@ p {
 }
 
 .portfolio-container {
-    background-color: rgb(141, 89, 148); /* Use the purple you want */
-    color:rgb(134, 134, 134); /* White text for contrast */
+    background-color: rgb(141, 89, 148); 
+    color:rgb(134, 134, 134);
     margin: 0 auto;
     width: 50%;
     max-width: 2000px;
@@ -186,16 +183,16 @@ p {
 .portfoliotopnav .brand {
     font-weight: bold;
 }
-.portfoliotopnav a.brand { /* Style for "Jessica Mifsud" */
-    border-radius: 0; /* Remove rounded corners */
-    background-color: transparent; /* Remove button background */
-    padding: 14px 0; /* Adjust padding */
-    margin-right: 50px; /* Add some space */
-    pointer-events: none; /* Make it non-clickable */
+.portfoliotopnav a.brand { 
+    border-radius: 0; 
+    background-color: transparent;
+    padding: 14px 0; 
+    margin-right: 50px; 
+    pointer-events: none;
     display: inline-block;
     margin: 0 5px;
     font-size: 50px;
-    font-family:Pirata One, Helvetica, sans-serif
+    font-family:"Pirata One", Helvetica, sans-serif
     
 }
 
@@ -206,35 +203,35 @@ p {
 }
 
 .portfolio-content {
-    text-align: center; /* Center the title and squares horizontally */
-    margin: 200px auto; /* Add some space around the content */
+    text-align: center; 
+    margin: 200px auto; 
 }
 
 .portfolio-title {
-    font-size: 5em; /* Make the title bigger */
-    margin-bottom: 150px; /* Add space below the title */
-    color: white; /* Make the title white */
+    font-size: 5em; 
+    margin-bottom: 150px; 
+    color: white; 
     font-family:"Pirata One", Helvetica, sans-serif;
 }
 
 .portfolio-squares {
-    display: flex; /* Make the squares line up in a row */
-    justify-content: center; /* Center the squares horizontally */
-    gap: 150px; /* Add some space between the squares */
+    display: flex;
+    justify-content: center; 
+    gap: 150px; 
 }
 
 .portfolio-square {
-    background-color: #d1a0c8; /* Light purple background */
-    color: white; /* White text */
-    padding: 100px; /* Add padding inside the squares */
-    border-radius: 20px; /* Round the corners */
-    width: 300px; /* Set a width for the squares */
-    height: 250px; /* Set a height for the squares */
-    display: flex; /* Make the text center vertically and horizontally */
+    background-color: #d1a0c8; 
+    color: white;
+    padding: 100px; 
+    border-radius: 20px; 
+    width: 300px; 
+    height: 250px; 
+    display: flex; 
     justify-content: center;
     align-items: center;
-    font-size: 2em; /* Make the text a bit bigger */
-    font-family:Playfair Display, Helvetica, sans-serif;
+    font-size: 2em; 
+    font-family:"Playfair Display", Helvetica, sans-serif;
     cursor: pointer;
     text-align: center;
     text-decoration: none;
@@ -265,9 +262,9 @@ p {
 }
 
 .digital-work {
-width: 700px; /* Adjust the image size */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 8px; /* Optional: Rounded corners */
+width: 700px; 
+  height: auto; 
+  border-radius: 8px; 
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
   border: 0; 
   margin-bottom: 30px;
@@ -298,11 +295,11 @@ width: 700px; /* Adjust the image size */
 
 .art-item:hover .art-name {
     opacity: 1;
-    font-family: Playfair Display, Helvetica, sans-serif;
+    font-family: "Playfair Display", Helvetica, sans-serif;
 }
 
 .form-container {
-    font-family: Playfair Display, Helvetica, sans-serif;
+    font-family: "Playfair Display", Helvetica, sans-serif;
     background-color: #7c5581;
     padding: 50px;
     border-radius: 40px;
@@ -311,14 +308,13 @@ width: 700px; /* Adjust the image size */
     min-height: 300px;
 }
 label, input, textarea {
-    display: block; /* Make labels and inputs stack on top of each other */
+    display: block;
     margin-bottom: 5px;
-    color: white; /* White text */
+    color: white; 
 }
 
 input[type="submit"] {
-    background-color: #d1a0c8; /* Light purple button */
-    color: white;
+    background-color: #d1a0c8; 
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -326,16 +322,16 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: purple; /* Darker purple on hover */
+    background-color: purple; 
 }
 
 input, textarea {
-    background-color: #444; /* Darker gray input fields */
+    background-color: #444; 
     border: none;
     padding: 8px;
     border-radius: 5px;
     color: white;
-    width: 100%; /* Make inputs fill the container */
+    width: 100%; 
 }
 
 .contactme-title h1{
@@ -345,7 +341,7 @@ input, textarea {
     align-items: center;
     margin-bottom: 40px;
     font-family: "Pirata One", Helvetica, sans-serif;
-    font-size: 6em; /* Make it big */
+    font-size: 6em;
     color: white;
 }
 
@@ -353,8 +349,8 @@ input, textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Center vertically */
-    min-height: 100vh; /* Take full screen height */
+    justify-content: center; 
+    min-height: 100vh; 
     text-align: center;
     padding: 20px;
 }
@@ -366,7 +362,7 @@ input, textarea {
     align-items: center;
     margin-bottom: 40px;
     font-family: "Pirata One", Helvetica, sans-serif;
-    font-size: 6em; /* Make it big */
+    font-size: 6em; 
     color: white;
 }
 
@@ -376,7 +372,8 @@ input, textarea {
     margin-top: 10px; 
     align-items: center;
     margin-bottom: 40px;
-    font-family: Playfair Display, Helvetica, sans-serif;
-    font-size: 2em; /* Make it big */
+    font-family: "Playfair Display", Helvetica, sans-serif;
+    font-size: 2em; 
     color: white;
 }
+select#subject { margin-bottom: 20px; }
